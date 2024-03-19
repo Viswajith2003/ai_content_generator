@@ -1,6 +1,9 @@
 import styles from "./Header.module.css";
 import { BsShare } from "react-icons/bs";
-import { MdNoteAlt } from "react-icons/md";
+import { GoPencil } from "react-icons/go";
+import { HiOutlineChatBubbleOvalLeft } from "react-icons/hi2";
+import { FiTriangle } from "react-icons/fi";
+import { TfiFile } from "react-icons/tfi";
 import Link from "next/link";
 
 const Header = () => {
@@ -20,25 +23,57 @@ const Header = () => {
                 slidepics
               </button>
 
-              <button className="bg-[#363c42] flex rounded-xl gap-2 w-20">
-                <BsShare className="ml-2 mt-4" />
-                <h2 className="font-semibold mt-4">Share</h2>
+              <button className=" flex rounded-xl gap-3 w-20 h-14 ">
+                <BsShare className=" mt-4" />
+                <h2 className="font-semibold mt-3">Share</h2>
               </button>
-              <MdNoteAlt className="w-8 h-12" />
+              <div className="bg-[#363c42] h-10 w-10 mt-2 rounded-md p-2">
+                <GoPencil className="w-5 h-5" />
+              </div>
             </div>
           </div>
           {/* <hr /> */}
           <div className="mt-5 ml-5">
-            <ul className="flex gap-6">
-              <li>
-                <Link href={"/"}>Artificium</Link>
+            <ul className="flex gap-14">
+
+              <li className="hover:text-[#9ef377]">
+                <button className="flex gap-2  items-center mb-2">
+                  <FiTriangle className="w-5 h-5 hover:text-[#9ef377]" />
+                  <Link href={"/"}>Artificium</Link>
+                </button>
+                <div className="flex gap-2 items-center">
+                  <span className="hover:bg-[#9ef377] hover:text-[#9ef377] rounded-full h-1 w-24"></span>
+                </div>
               </li>
-              <li>
+
+              <li className=" hover:text-[#9ef377]">
+                <button className="flex gap-2  items-center mb-2">
+                  <HiOutlineChatBubbleOvalLeft className="w-5 h-5 hover:text-[#9ef377]" />
+                  <Link href={"/"}>Chat</Link>
+                </button>
+                <div className="flex gap-2 items-center">
+                  <span className="hover:bg-[#9ef377] hover:text-[#9ef377] rounded-full h-1 w-24"></span>
+                </div>
+              </li>
+
+              <li className=" hover:text-[#9ef377]">
+                <button className="flex gap-2  items-center mb-2">
+                  <TfiFile className="w-5 h-5 hover:text-[#9ef377]" />
+                  <Link href={"/"}>Library</Link>
+                </button>
+                <div className="flex gap-2 items-center">
+                  <span className="hover:bg-[#9ef377] hover:text-[#9ef377] rounded-full h-1 w-24"></span>
+                </div>
+              </li>
+
+              {/* <li className="underline-hover-effect flex  gap-2 hover:text-[#9ef377]">
+                <HiOutlineChatBubbleOvalLeft className="w-5 h-5" />
                 <Link href={"/"}>Chat</Link>
               </li>
-              <li>
+              <li className="flex gap-2 hover:text-[#9ef377]">
+                <TfiFile className="w-5 h-5" />
                 <Link href={"/"}>Library</Link>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
