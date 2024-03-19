@@ -1,4 +1,4 @@
-## AIO Admin Dashboard
+## AI Content Generator Dashbord
 
 Developed this aio dashboard using nextjs with lots of love.
 
