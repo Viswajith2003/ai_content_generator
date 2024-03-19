@@ -1,176 +1,47 @@
-import { useRef } from "react";
-import {
-  IoNotificationsOutline,
-} from "react-icons/io5";
-import DropdownMenu from "../DropdownMenu";
-import IconWrapper from "../IconWrapper";
-import UserIcon from "../UserIcon";
 import styles from "./Header.module.css";
-import { HiOutlineMenuAlt1 } from "react-icons/hi";
+import { BsShare } from "react-icons/bs";
+import { MdNoteAlt } from "react-icons/md";
 import Link from "next/link";
-import { headerLoginMenuList, menuList } from "../../data";
 
-/*
-
-Dropdown Menu Guideline and Instructions
-Dropdown Menu props are
-    label: string
-    CustomMenu: React Component
-    dropdownContainerStyle: style object
-    children: React Component
-
-    Note: label or CustomMenu only one can be used at a time
-    CustomMenu has higher priority if CustomMenu has passed as
-    props then label wont work but if CustomMenu has not given
-    then label will be visible
-
-
-*/
-
-const MenuList = ({ href = "", Icon = null, text = "" }) => {
+const Header = () => {
   return (
-    <li>
-      <Link href={href} className={styles["link"]}>
-        {Icon && <Icon />}
-        <span>{text}</span>
-      </Link>
-    </li>
-  );
-};
+    <section>
+      <div className={`${styles.container}`}>
+        <div className="bg-[#12181f] w-full rounded-xl p-2 h-36 ml-5">
+          <div className="flex justify-between mb-2">
+            <div className="p-2 ">
+              <h1 className="font-bold text-2xl mb-2">Orbital Oddysey</h1>
+              <p className="font-light text-sm">
+                Marketing Campaign for a new TV series Launch
+              </p>
+            </div>
+            <div className="flex gap-5 p-2">
+              <button className="bg-[#363c42] rounded-xl p-2 ">
+                slidepics
+              </button>
 
-const NotificationsIcon = ({ onClick = () => {} }) => (
-  <IconWrapper
-    onClick={onClick}
-    style={{
-      top: "2px",
-      fontSize: "20px",
-    }}
-  >
-    <IoNotificationsOutline />
-  </IconWrapper>
-);
-
-const NotificationList = ({ img = null, desc = "", datetime = "" }) => {
-  return (
-    <li>
-      {img && <img src={img} alt="" />}
-      <div className={styles["single-notification"]}>
-        <p>{desc}</p>
-        <p>{datetime}</p>
-      </div>
-    </li>
-  );
-};
-
-const Header = ({ toggleSidebarMenu }) => {
-  return (
-    <section className={styles.container}>
-      <div className={styles["left-items"]}>
-        <ul>
-          <li>
-            <button
-              className={styles["close-sidemenu"]}
-              onClick={toggleSidebarMenu}
-            >
-              <HiOutlineMenuAlt1 />
-            </button>
-          </li>
-          <li>
-            <Link href={'/'}>
-              Dashboard
-            </Link>
-          </li>
-          <li>
-            <Link href={'/'}>
-              Users
-            </Link>
-          </li>
-          <li>
-            <Link href={'/'}>
-              Settings
-            </Link>
-          </li>
-        </ul>
-      </div>
-      <div className={styles["right-items"]}>
-        <ul className={styles["header-navigations"]}>
-
-          <li>
-            <DropdownMenu label={"Login/Signup"}>
-              <ul className={styles["dropdown-menu"]}>
-                {headerLoginMenuList.map((menu, index) => (
-                  <MenuList
-                    key={index} 
-                    text={menu.text}
-                    Icon={menu.Icon}
-                    href={menu.href}
-                  />
-                ))}
-              </ul>
-            </DropdownMenu>
-          </li>
-
-          <li>
-            <DropdownMenu 
-              CustomMenu={NotificationsIcon} 
-              count={4}
-              screenCenter={false}
-              >
-              <div className={styles["notification-container"]}>
-    
-                <div className={`flex justify-sb ${styles["notification-header"]}`}>
-                  <h3>Notifications</h3>
-                  <p style={{ color: "blue", fontWeight: "bold" }}>
-                    Mark all as Read
-                  </p>
-                </div>
-                <div className={styles["notification-body"]}>
-                  <ul className={styles["notification-tabs"]}>
-                      <li className={styles['active']}>All</li>
-                      <li>Following</li>
-                      <li>Archeive</li>
-                    </ul>
-                  <ul className={styles["notification-tab"]}>
-                    {[0, 1, 2].map((notification, i) => (
-                      <NotificationList 
-                        key={i}
-                        img={`https://cdn.pixabay.com/photo/2017/03/19/20/19/ball-2157465__340.png`}
-                        desc={'Jacob jone mwntion you in rewrite button tab'}
-                        datetime={'1:12pm'}
-                      />
-                    ))}
-                  
-                </ul>
-                </div>
-                
-              </div>
-            </DropdownMenu>
-          </li>
-
-          <li>
-            {/* User Dropdown Menu */}
-            <DropdownMenu
-              label={"Dropdown 1"}
-              CustomMenu={UserIcon}
-              dropdownContainerStyle={
-                {
-                  // padding: '15px 0'
-                }
-              }
-            >
-              <ul className={styles["dropdown-menu"]}>
-                {menuList.map((menu, index) => (
-                  <MenuList
-                    key={index}
-                    text={menu.text}
-                    Icon={menu.Icon}
-                    href={menu.href}
-                  />
-                ))}
-              </ul>
-            </DropdownMenu>
-          </li>
-        </ul>
+              <button className="bg-[#363c42] flex rounded-xl gap-2 w-20">
+                <BsShare className="ml-2 mt-4" />
+                <h2 className="font-semibold mt-4">Share</h2>
+              </button>
+              <MdNoteAlt className="w-8 h-12" />
+            </div>
+          </div>
+          {/* <hr /> */}
+          <div className="mt-5 ml-5">
+            <ul className="flex gap-6">
+              <li>
+                <Link href={"/"}>Artificium</Link>
+              </li>
+              <li>
+                <Link href={"/"}>Chat</Link>
+              </li>
+              <li>
+                <Link href={"/"}>Library</Link>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
   );
