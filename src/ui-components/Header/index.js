@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <section>
       <div className={`${styles.container}`}>
-        <div className="bg-[#12181f] w-full rounded-xl p-2 h-36 ml-5">
+        <div className="bg-[#0c0e10] w-full rounded-xl ml-6 mt-7 pt-4 h-40  pl-6 pr-6">
           <div className="flex justify-between mb-2">
             <div className="p-2 ">
               <h1 className="font-bold text-2xl mb-2">Orbital Oddysey</h1>

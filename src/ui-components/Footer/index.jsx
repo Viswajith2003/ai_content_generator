@@ -3,7 +3,7 @@ import InputChat from "../InputChat/index"
 
 export default function index() {
   return (
-    <div>
+    <div className='bg-[#121618]'>
       <InputChat/>
     </div>
   )

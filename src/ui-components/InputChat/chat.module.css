@@ -1,13 +1,13 @@
 .container {
-    width: calc(100% - 300px);
-    height: 140px;
-    background: #242729;
-    position: relative;
-    color: white;
-    left: 300px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 20px;
-  }
+  width: calc(100% - 300px);
+  height: 120px;
+  background: #121618;
+  position: relative;
+  color: white;
+  left: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px;
+}
