@@ -1,7 +1,9 @@
+import React from 'react'
 import Layout from "../src/ui-components/layout";
-import Dashboard from "src/Pages/dashboard/Dashboard";
+import Footer from "../src/ui-components/Footer"
+
 export default () => (
     <Layout>
-        <Dashboard />
+        <Footer />
     </Layout>
 )

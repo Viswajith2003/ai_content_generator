@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import Header from "../Header";
 import SidebarNavigation from "../SidebarNavigation";
+import Footer from '../Footer/index'
+// import Footer from "pages/footer";
 
 const Layout = ({ children }) => {
   const [sidebarMenuActive, setSidebarMenuActive] = useState(true);
@@ -25,6 +27,8 @@ const Layout = ({ children }) => {
       <section className="content">
         {children}
       </section>
+
+      <Footer/>
     </>
   );
 };
