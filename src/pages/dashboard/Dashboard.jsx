@@ -18,13 +18,13 @@ export default function Dashboard() {
           {HomeCard.map((card, index) => (
             <div key={index} className="m-10 w-80 p-4">
               <div className="flex flex-col justify-center items-center text-center mb-6">
-                <div className="bg-[#262c2c] p-3 rounded-full">
+                <div className="bg-[#262c2c] p-3 rounded-full hover:scale-95">
                   <card.Icon
-                    className="text-2xl"
+                    className="text-2xl "
                     style={{ color: card.color }}
                   />
                 </div>
-                <h1 className="mt-2">{card.name}</h1>
+                <h1 className="mt-3 font-bold text-[18px] mb-4">{card.name}</h1>
               </div>
               <div className="flex flex-col justify-center items-center text-center gap-3">
                 <button className="flex bg-[#1b1f23] p-3 rounded-xl w-48 justify-between">
@@ -48,9 +48,6 @@ export default function Dashboard() {
           ))}
         </div>
       </section>
-
-      
-
     </div>
   );
 }

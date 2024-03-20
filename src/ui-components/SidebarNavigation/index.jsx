@@ -45,11 +45,11 @@ const SidebarNavigation = ({ sidebarMenuActive, toggleSidebarMenu }) => {
         <h1 className="text-[#9c9491f3] mb-4">GENERAL</h1>
         <div className={`${styles["sidebar-menu-item"]} mb-14 `}>
           <div className="flex mb-4">
-            <FaSearch className="mt-4 " />
+            <FaSearch className="mt-4 mr-2 h-6" />
             <input
               type="search"
               placeholder="Search"
-              className="text-white bg-gray-800 focus:outline-none px-4 py-2"
+              className="text-white bg-gray-800 border-2 border-[#0c0e10] focus:outline-none px-2 py-1"
               style={{ "--placeholder-font-weight": "bold" }}
             />
             <div className="bg-[#312b2b] mt-2 mb-2 rounded-lg w-20 h-10 flex">

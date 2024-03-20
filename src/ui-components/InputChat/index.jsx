@@ -15,7 +15,7 @@ export default function Chat() {
           <input
             type="text"
             placeholder="You can ask me anything! I am here to help."
-            className="w-full py-8 px-2 bg-[#0c0e10] focus:outline-none"
+            className="w-full py-8 px-2 bg-[#0c0e10] focus:outline-none border-2 border-[#0c0e10]"
           />
           <div className="bg-[#0c0e10] rounded-md">
             <ImAttachment className="w-20 h-6 mt-8 " />
