@@ -24,9 +24,5 @@ export default [
         name: 'Social Media Strategy',
         Icon: IoGridOutline
     },
-    {
-        to: '/statistics',
-        name: 'Statistics',
-        Icon: AiOutlineBarChart
-    }
+    
 ];
