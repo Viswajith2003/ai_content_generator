@@ -18,7 +18,9 @@ const Header = () => {
               </p>
             </div>
             <div className="flex gap-5 p-2">
-              <Viewicon />
+              <div className="mt-2">
+                <Viewicon />
+              </div>
               <Link href="#">
                 <button className="flex rounded-xl gap-3 w-20 h-14 hover:scale-95">
                   <BsShare className="mt-4" />

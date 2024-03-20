@@ -31,19 +31,19 @@ export default function Dashboard() {
               <h1 className="mt-3 font-bold text-[18px] mb-4">{card.name}</h1>
             </div>
             <div className="flex flex-col justify-center items-center text-center gap-3">
-              <button className="flex bg-[#1b1f23] p-3 rounded-xl w-48 justify-between">
+              <button className="flex bg-[#1b1f23] p-3 rounded-xl w-56 justify-between hover:scale-95">
                 <h1 className="">{card.btntxt1}</h1>
                 <FaLongArrowAltRight className="ml-5 mt-1 text-gray-500" />
               </button>
-              <button className="flex bg-[#1b1f23] p-3 rounded-xl w-48 justify-between">
+              <button className="flex bg-[#1b1f23] p-3 rounded-xl w-56 justify-between hover:scale-95">
                 <h1 className="">{card.btntxt2}</h1>
                 <FaLongArrowAltRight className="ml-5 mt-1 text-gray-500" />
               </button>
-              <button className="flex bg-[#1b1f23] p-3 rounded-xl w-48 justify-between">
+              <button className="flex bg-[#1b1f23] p-3 rounded-xl w-56 justify-between hover:scale-95">
                 <h1 className="">{card.btntxt3}</h1>
                 <FaLongArrowAltRight className="ml-5 mt-1 text-gray-500" />
               </button>
-              <button className="flex bg-[#1b1f23] p-3 rounded-xl w-48 justify-between">
+              <button className="flex bg-[#1b1f23] p-3 rounded-xl w-56 justify-between hover:scale-95">
                 <h1 className="">{card.btntxt4}</h1>
                 <FaLongArrowAltRight className="ml-5 mt-1 text-gray-500" />
               </button>
