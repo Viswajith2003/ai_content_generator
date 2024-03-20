@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import Header from "../Header";
 import SidebarNavigation from "../SidebarNavigation";
-import Footer from '../Footer/index'
-// import Footer from "pages/footer";
+import Footer from "../Footer/index";
+import Cardmodal from "@aio/components/cardmodal/popupcard";
+import Viewbtn from "../viewbtn/index";
 
 const Layout = ({ children }) => {
   const [sidebarMenuActive, setSidebarMenuActive] = useState(true);
@@ -14,6 +15,7 @@ const Layout = ({ children }) => {
     setSidebarMenuActive(window.innerWidth > 768 ? true : false);
   }, []);
 
+  // const [showModal, setShowModal] = useState(false);
   return (
     <>
       <SidebarNavigation
@@ -24,11 +26,11 @@ const Layout = ({ children }) => {
         toggleSidebarMenu={toggleSidebarMenu}
         showSidebarMenu={showSidebarMenu}
       />
-      <section className="content">
-        {children}
-      </section>
+      {/* <Viewbtn onClick={( )=>{setShowModal(true)}}/> */}
+      <section className="content">{children}</section>
+      {/* <Cardmodal visible={showModal} /> */}
 
-      <Footer/>
+      <Footer />
     </>
   );
 };

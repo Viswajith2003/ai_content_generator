@@ -3,7 +3,7 @@ import { BsShare } from "react-icons/bs";
 import { GoPencil } from "react-icons/go";
 import Link from "next/link";
 import routing from "./routing";
-import Viewicon from "../viewmodal";
+import Viewicon from "../viewbtn";
 
 const Header = () => {
   return (
@@ -42,7 +42,7 @@ const Header = () => {
                       <span>{route.name}</span>
                     </div>
                   </Link>
-                  <span className="block bg-[#9ef377] rounded-full h-1 w-24"></span>
+                  <span className="block hover:bg-[#9ef377] rounded-full h-1 w-24"></span>
                 </li>
               ))}
             </ul>
