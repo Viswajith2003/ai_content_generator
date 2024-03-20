@@ -1,7 +1,8 @@
 import styles from "./Header.module.css";
+import { BsShare } from "react-icons/bs";
+import { GoPencil } from "react-icons/go";
 import Link from "next/link";
 import routing from './routing'
-
 const Header = () => {
   return (
     <section>
@@ -18,6 +19,15 @@ const Header = () => {
               <button className="bg-[#363c42] rounded-xl p-2 ">
                 slidepics
               </button>
+              <Link href="#">
+                <button className="flex rounded-xl gap-3 w-20 h-14">
+                  <BsShare className="mt-4" />
+                  <h2 className="font-semibold mt-3">Share</h2>
+                </button>
+              </Link>
+              <div className="bg-[#363c42] h-10 w-10 mt-2 rounded-md p-2">
+                <GoPencil className="w-5 h-5" />
+              </div>
               {/* Assuming these buttons are part of your header */}
             </div>
           </div>
