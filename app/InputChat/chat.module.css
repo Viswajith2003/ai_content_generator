@@ -2,7 +2,8 @@
   width: calc(100% - 300px);
   height: 120px;
   background: #121618;
-  position: relative;
+  position: fixed;
+  bottom: 0;
   color: white;
   left: 300px;
   display: flex;

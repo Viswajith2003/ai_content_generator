@@ -2,7 +2,7 @@
   width: calc(100% - 300px);
   height: 140px;
   background: #121618;
-  position: relative;
+  position: fixed;
   color: white;
   left: 300px;
   display: flex;
@@ -11,9 +11,6 @@
   box-sizing: border-box;
   padding: 20px;
 }
-
-
-
 
 .underline-hover-effect {
   display: inline-block;

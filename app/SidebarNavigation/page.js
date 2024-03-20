@@ -1,19 +1,21 @@
-import Logo from "../Logo";
+import { useNavigation } from "next/navigation";
+
 import styles from "./SidebarNavigation.module.css";
 import Link from "next/link";
-import routes from "../../routes";
-import { useRouter } from "next/router";
+import routes from "./routing";
+import { useRouter } from "next/navigation";
 import { CiSettings } from "react-icons/ci";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { IoMdAddCircleOutline } from "react-icons/io";
 import { FaSearch } from "react-icons/fa";
 import { MdOutlineWeb } from "react-icons/md";
 import { MdOutlineQrCodeScanner } from "react-icons/md";
+import Logo from "../Logo";
 
 const SidebarNavigation = ({ sidebarMenuActive, toggleSidebarMenu }) => {
-  const router = useRouter();
+  // const router = useRouter();
 
-  console.log({ router });
+  // console.log({ router });
 
   return (
     <section
@@ -71,7 +73,7 @@ const SidebarNavigation = ({ sidebarMenuActive, toggleSidebarMenu }) => {
             <li
               key={index}
               className={`${styles["sidebar-menu-item"]} ${
-                router.route === page.to ? styles["active"] : ""
+                page.route === page.to ? styles["active"] : ""
               }`}
             >
               <Link href={page.to}>
