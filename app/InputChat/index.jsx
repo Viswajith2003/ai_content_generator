@@ -9,19 +9,19 @@ export default function Chat() {
     <div>
       <div className={`${Styles.container}`}>
         <div className="bg-[#0c0e10] w-full rounded-xl p-2 h-28 ml-6 flex">
-          <div className="bg-[#0c0e10] rounded-md">
-            <MdOutlineKeyboardVoice className="w-14 h-8 mt-8 ml-5" />
+          <div className="bg-[#0c0e10] rounded-md hover:scale-95">
+            <MdOutlineKeyboardVoice className="w-12 h-7 mt-8 ml-5" />
           </div>
           <input
             type="text"
             placeholder="You can ask me anything! I am here to help."
             className="w-full py-8 px-2 bg-[#0c0e10] focus:outline-none border-2 border-[#0c0e10]"
           />
-          <div className="bg-[#0c0e10] rounded-md">
-            <ImAttachment className="w-20 h-6 mt-8 " />
+          <div className="bg-[#0c0e10] rounded-md mr-3">
+            <ImAttachment className="w-18 h-8 mt-8 hover:scale-95" />
           </div>
-          <div className="bg-[#1b1c21] rounded-md w-16 mt-4 mr-4 h-16 ml-6 flex items-center justify-center">
-            <FiSend className="w-20 h-6" />
+          <div className="bg-[#1b1c21] rounded-md w-14 mt-5 mr-4 h-14 ml-6 flex items-center justify-center hover:scale-95">
+            <FiSend className="w-18 h-8 hover:scale-95" />
           </div>
         </div>
       </div>
