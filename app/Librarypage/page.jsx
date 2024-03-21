@@ -13,7 +13,7 @@ export default function Libry() {
         {ImgCard.map((card, index) => (
           <div
             key={index}
-            className="Images bg-[#131619] text-white px-3 w-[420px]"
+            className="Images bg-[#131619] text-white px-3 w-[420px] hover:scale-95"
           >
             <div className="Title flex justify-between px-3 m-2">
               <h1 className="font-semibold text-[35px]">{card.Heading}</h1>
@@ -65,7 +65,7 @@ export default function Libry() {
         {DocCard.map((card, index) => (
           <div
             key={index}
-            className="Images bg-[#131619] text-white px-3 w-[390px]"
+            className="Images bg-[#131619] text-white px-3 w-[390px] hover:scale-95"
           >
             <div className="Title flex justify-between px-3 m-2">
               <h1 className="font-semibold text-[35px]">{card.Heading}</h1>
@@ -92,7 +92,7 @@ export default function Libry() {
         {IdeaCard.map((card, index) => (
           <div
             key={index}
-            className="Images bg-[#131619] text-white px-3 w-[390px]"
+            className="Images bg-[#131619] text-white px-3 w-[390px] hover:scale-95"
           >
             <div className="Title flex justify-between px-3 m-2">
               <h1 className="font-semibold text-[35px]">{card.Heading}</h1>
