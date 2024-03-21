@@ -1,7 +1,8 @@
 import { HiDotsVertical } from "react-icons/hi";
 import { TiMessage } from "react-icons/ti";
 
-const LibCard = [
+
+const ImgCard = [
   {
     Heading: "Images",
     doticon: HiDotsVertical,
@@ -16,8 +17,6 @@ const LibCard = [
     msgicon: TiMessage,
   },
   {
-    Heading: "Images",
-    doticon: HiDotsVertical,
     cardtitle: "Cosmic Voyager",
     content:
       "Main spacecraft used by the crew int the story. It is a highly advanced vessel designed to withstand the harsh condition of space and capable of traveling vast distances at incredible speeds.",
@@ -30,16 +29,94 @@ const LibCard = [
   },
 ];
 
-export default LibCard;
+export { ImgCard };
 
-const SmallCard = [
+const DocCard = [
   {
     Heading: "Documents",
     doticon: HiDotsVertical,
-    cardtitle: "Character bioa",
-    content: "3 documents,43832 words",
+    cardtitle: "Character bios",
+    content: "3 documents, 43832 words",
+    btn: "/viewers.png",
+    count: 0,
+    msgicon: TiMessage,
+  },
+  {
+    cardtitle: "Character bios",
+    content: "3 documents, 43832 words",
+    btn: "/viewers.png",
+    count: 0,
+    msgicon: TiMessage,
+  },
+  {
+    cardtitle: "Plot outline",
+    content: "1 document, 18745 words",
+    btn: "/viewers.png",
+    count: 0,
+    msgicon: TiMessage,
+  },
+  {
+    cardtitle: "Scene descriptions",
+    content: "5 documents, 23992 words",
+    btn: "/viewers.png",
+    count: 0,
+    msgicon: TiMessage,
+  },
+  // {
+  //   cardtitle: "Dialogue snippets",
+  //   content: "2 documents, 10384 words",
+  //   btn: "/viewers.png",
+  //   count: 0,
+  //   msgicon: TiMessage,
+  // },
+];
+
+export { DocCard };
+
+const IdeaCard = [
+  {
+    Heading: "Ideas",
+    doticon: HiDotsVertical,
+    cardtitle: "Concept art for potential new characters or locations",
+    btn: "/viewers.png",
+    count: 0,
+    msgicon: TiMessage,
+  },
+  {
+    cardtitle: "A list of potential plot points or story arcs",
+    btn: "/viewers.png",
+    count: 0,
+    msgicon: TiMessage,
+  },
+  {
+    cardtitle: "Ideas for potential spin-offs or other related media",
+    btn: "/viewers.png",
+    count: 0,
+    msgicon: TiMessage,
+  },
+  {
+    cardtitle: "Potential partnerships or collaborations with other artists or creators",
     btn: "/viewers.png",
     count: 0,
     msgicon: TiMessage,
   },
 ];
+
+export { IdeaCard };
+
+
+// const Title =[
+//   {
+//     Heading: "Images",
+//     doticon: HiDotsVertical,
+//   },
+//   {
+//     Heading: "Documents",
+//     doticon: HiDotsVertical,
+//   },
+//   {
+//     Heading: "Ideas",
+//     doticon: HiDotsVertical,
+//   }
+// ];
+// export { Title };
