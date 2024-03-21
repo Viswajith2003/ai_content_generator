@@ -1,5 +1,5 @@
 import React from "react";
-import Viewbtn from "../viewbtn/index";
+import Viewbtn from "../viewbtn/page";
 import { TiMessage } from "react-icons/ti";
 import Image from "next/image";
 import { Title, ImgCard, DocCard, IdeaCard } from "./LibCard"; // Import the arrays

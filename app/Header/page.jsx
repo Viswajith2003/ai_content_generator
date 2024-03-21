@@ -3,7 +3,7 @@ import { BsShare } from "react-icons/bs";
 import { GoPencil } from "react-icons/go";
 import Link from "next/link";
 import routing from "./routing";
-import Viewicon from "../viewbtn";
+import Viewicon from "../viewbtn/page";
 
 const Header = () => {
   return (

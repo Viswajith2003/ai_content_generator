@@ -8,7 +8,7 @@ import { IoMdAddCircleOutline } from "react-icons/io";
 import { FaSearch } from "react-icons/fa";
 import { MdOutlineWeb } from "react-icons/md";
 import { MdOutlineQrCodeScanner } from "react-icons/md";
-import Logo from "../Profile";
+import Logo from "../Profile/page";
 
 const SidebarNavigation = ({ sidebarMenuActive, toggleSidebarMenu }) => {
   return (

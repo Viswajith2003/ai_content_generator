@@ -4,7 +4,7 @@ import { TfiFile } from "react-icons/tfi";
 
 const routing = [
   {
-    to: "/artificiumpage",
+    to: "/artificium",
     icon: FiTriangle,
     name: "Artificium",
   },
@@ -14,9 +14,9 @@ const routing = [
     name: "Chat",
   },
   {
-    to: "/librarypage",
+    to: "/Librarypage",
     icon: TfiFile,
     name: "Library",
   },
-];  
+];
 export default routing;
