@@ -8,7 +8,7 @@ export default function Dashboard() {
     <div
       className={`${styles.content} bg-[#121618] text-white m-0 rounded-xl p-6 border-2 border-gray-600`}
     >
-      <div className=" text-center mt-12 mb-8">
+      <div className=" text-center mb-6">
         <h1 className=" text-3xl font-bold mb-4">Innovation Starter Pack</h1>
         <p>
           Kickstart your innovation process with our comprehensive selection of

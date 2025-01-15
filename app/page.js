@@ -12,14 +12,18 @@ export default function Home() {
       {/* <Libry/>  */}
       <SidebarNavigation />
       <Header />
-      <div className="w-[81%] h-[67%] bg-[#121618] fixed top-[180px] right-5">
+      <div className="w-[79%] h-[64%] bg-[#121618] fixed top-[180px] right-5">
         <Dashboard />
       </div>
-      {/* <div className="w-[81%] h-[67%] bg-[#131619] fixed top-[180px] right-5">
-        <Libry className="" />
-      </div> */}
+
       <InputChat />
       {/* <Art /> */}
     </main>
   );
+}
+
+{
+  /* <div className="w-[81%] h-[67%] bg-[#131619] fixed top-[180px] right-5">
+        <Libry className="" />
+   </div> */
 }
